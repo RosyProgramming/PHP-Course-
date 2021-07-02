@@ -1,0 +1,15 @@
+
+Select login from usuarios where login = '$login';
+ 
+ trocando a variável login por 105 or 1=1
+
+ conseguimos lista todos os dados da tabela usuários.
+
+ Select login from usuarios where login = 105 or 1 = 1;
+
+ É possível o hacking excluir a tabela usando 1; DROP TABLE teste
+
+ Select login from usuarios where login = 1; DROP TABLE teste 
+
+ Para se protege do tipo de ataques, aplicamos um fitro de segurança,
+  usamos a função mysqli_escape_string(); 
